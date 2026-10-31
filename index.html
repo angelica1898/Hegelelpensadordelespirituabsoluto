@@ -1,4 +1,4 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><title>Hegel, un pensador del espíritu absoluto</title><style>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><title>Hegel, un pensador del espíritu absoluto</title><style>
     :root {
       color-scheme: dark;
       --night: #071a3d;
@@ -19,7 +19,7 @@
     html { background: var(--night); scroll-behavior: smooth; }
     body {
       margin: 0;
-      color: #f4f9ff;
+      color: #DCEBF9;
       font-family: Inter, ui-sans-serif, system-ui, "Segoe UI", Arial, sans-serif;
       background: radial-gradient(ellipse at 18% 0%, #1a5790 0%, transparent 34rem),
                   linear-gradient(145deg, #0b2a60 0%, #071a3d 58%, #102b5a 100%);
@@ -221,7 +221,7 @@
     }
     *{box-sizing:border-box}
     html{background:var(--night);scroll-behavior:smooth}
-    body{margin:0;color:#f4f9ff;font-family:Inter,ui-sans-serif,system-ui,"Segoe UI",Arial,sans-serif;
+    body{margin:0;color:#DCEBF9;font-family:Inter,ui-sans-serif,system-ui,"Segoe UI",Arial,sans-serif;
       background:radial-gradient(ellipse at 18% 0%,#1a5790 0%,transparent 34rem),linear-gradient(145deg,#0b2a60 0%,#071a3d 58%,#102b5a 100%);min-height:100vh}
     button,input{font:inherit}button{color:inherit}a{color:#075a9a}
     :focus-visible{outline:4px solid var(--gold);outline-offset:4px}
@@ -683,11 +683,22 @@ body.high-contrast .intro-card,body.high-contrast .chapter-intro,body.high-contr
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
 @media print{body{background:white;color:#000}.site-header,.welcome-actions,.back-top{display:none!important}.welcome{padding:1rem;background:white;color:#000}.welcome p{color:#000}.triad{display:none}.intro-card,.chapter-intro,.materials-card,.chapter .scene{box-shadow:none;break-inside:avoid;background:white}.answer-feedback{display:block!important}}
 [hidden]{display:none!important}
-body{background:linear-gradient(145deg,#06152e 0%,#0a2b53 48%,#06152e 100%)!important;color:#f4f9ff}
+body{background:linear-gradient(145deg,#06152e 0%,#0a2b53 48%,#06152e 100%)!important;color:#DCEBF9}
 .home-routes{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}.home-routes a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.55rem .85rem;border:1px solid #9dbed8;border-radius:.7rem;background:#0e4d83;color:#fff;font-weight:850;text-decoration:none}.home-routes a:hover{background:#1a6099;color:#fff}
 .site-brand{min-width:0}.site-brand span:last-child{max-width:36ch;line-height:1.15}.main-nav a[aria-current="page"]{color:#102a45;background:var(--integrated-gold)}
 body.high-contrast{background:#000!important;color:#fff}
-@media(max-width:700px){.site-brand span:last-child{max-width:22ch}.home-routes a{flex:1 1 14rem}.main-nav{scroll-snap-type:x proximity}.main-nav a{scroll-snap-align:start}}body.high-contrast .main-nav a{background:#000;color:#fff;border:2px solid #fff}body.high-contrast .main-nav a[aria-current="page"]{background:#ff0;color:#000}body.high-contrast .home-routes a,body.high-contrast .welcome-actions a{background:#fff!important;color:#000!important;border:2px solid #000}body.high-contrast .welcome-actions a.secondary{background:#000!important;color:#fff!important;border:2px solid #fff}</style></head><body id="arriba">
+@media(max-width:700px){.site-brand span:last-child{max-width:22ch}.home-routes a{flex:1 1 14rem}.main-nav{scroll-snap-type:x proximity}.main-nav a{scroll-snap-align:start}}body.high-contrast .main-nav a{background:#000;color:#fff;border:2px solid #fff}body.high-contrast .main-nav a[aria-current="page"]{background:#ff0;color:#000}body.high-contrast .home-routes a,body.high-contrast .welcome-actions a{background:#fff!important;color:#000!important;border:2px solid #000}body.high-contrast .welcome-actions a.secondary{background:#000!important;color:#fff!important;border:2px solid #fff}/* Ajuste de contraste tipográfico */
+.intro-card,.chapter-intro,.materials-card,.text-card,.card,.intro,.references-card,.quiz-section,.section-body,.question,.references,.info-card,.route-card,.chapter-end,.source-note,.material-note,.note,.dialogue,.bubble,.quiz,.quiz-result,.answer-feedback,details{color:#102a45!important}
+.intro-card h1,.intro-card h2,.intro-card h3,.chapter-intro h1,.chapter-intro h2,.chapter-intro h3,.materials-card h1,.materials-card h2,.materials-card h3,.text-card h1,.text-card h2,.text-card h3,.card h1,.card h2,.card h3,.question legend{color:#071a33!important}
+.intro-card p,.intro-card li,.chapter-intro p,.chapter-intro li,.materials-card p,.materials-card li,.text-card p,.text-card li,.card p,.card li,.references li,.refs-list li,.ref-list li,.question label,.question p,.answer-feedback,.quiz-result,.source,.citation,.cite,.chapter .scene .source,.chapter .scene .citation,.source-note,.material-note,.note,.dialogue,.bubble,.chapter-end,details p,summary{color:#102a45!important}/* Deslizamiento por viñetas y título de portada */
+.welcome h1{color:#c6e4ff!important}
+html.story-snap{scroll-snap-type:y mandatory;scroll-padding-top:8.5rem}
+html.story-snap .chapter .scene{min-height:max(82svh,calc(100svh - 8.5rem))!important;scroll-snap-align:start;scroll-snap-stop:always;scroll-margin-top:9rem;scroll-margin-bottom:5.5rem;padding-bottom:5.8rem!important}
+.story-dock{position:fixed;z-index:100;inset:auto 0 0;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:.7rem;padding:.55rem clamp(.65rem,3vw,1.5rem) max(.55rem,env(safe-area-inset-bottom));border-top:1px solid rgba(214,235,255,.35);background:rgba(3,15,36,.97);color:#DCEBF9;box-shadow:0 -8px 24px rgba(0,0,0,.24);backdrop-filter:blur(12px)}
+.story-dock[hidden]{display:none!important}.dock-button{min-width:48px;min-height:48px;border:2px solid #cce7ff;border-radius:.7rem;background:#124577;color:#fff;font:inherit;font-size:1.15rem;font-weight:900;cursor:pointer}.dock-button:hover{background:#1c6097}.dock-button:disabled{opacity:.5;cursor:not-allowed}.dock-center{min-width:0;display:grid;gap:.2rem}.dock-status{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#DCEBF9;font-size:.86rem;font-weight:850}.dock-range{width:100%;min-height:24px;margin:0;accent-color:#ffcf69;cursor:pointer}
+body.high-contrast .story-dock{background:#000;color:#fff;border-top:2px solid #fff}body.high-contrast .dock-status{color:#fff}body.high-contrast .dock-button{background:#000;color:#fff;border-color:#fff}
+@media(max-width:520px){.story-dock{gap:.45rem;padding:.45rem .55rem max(.45rem,env(safe-area-inset-bottom))}.dock-button{min-width:44px;min-height:44px}.dock-status{font-size:.78rem}}
+@media(prefers-reduced-motion:reduce){html.story-snap{scroll-behavior:auto}}</style></head><body id="arriba">
 <a class="skip-integrated" href="#contenido">Saltar al contenido</a>
 <header class="site-header"><div class="header-main"><div class="site-brand"><span class="brand-mark" aria-hidden="true">H</span><span>Hegel, un pensador del espíritu absoluto<small>Vida · Fenomenología · Lógica · Cuestionarios</small></span></div><div class="access-tools" aria-label="Opciones de lectura"><button id="smaller" type="button" aria-label="Reducir tamaño del texto">A−</button><button id="larger" type="button" aria-label="Aumentar tamaño del texto">A+</button><button id="contrast" type="button" aria-pressed="false">Contraste alto</button></div></div><nav class="main-nav" aria-label="Secciones de la página"><a href="#inicio">Inicio</a><a href="#vida">Vida</a><a href="#fenomenologia">Fenomenología</a><a href="#logica">Ciencia de la lógica</a><a href="#cuestionarios">Cuestionarios</a><a href="#material">Bibliografía</a></nav></header>
 <main id="contenido">
@@ -1343,43 +1354,43 @@ body.high-contrast{background:#000!important;color:#fff}
           <div class="quiz-result" role="status" aria-live="polite">Selecciona una opción en cada pregunta y luego revisa.</div>
           <fieldset class="question" data-answer="b"><legend>1. ¿Dónde y en qué año nació Hegel?</legend>
             <label><input type="radio" name="vida1" value="a"><span>En Berlín, en 1770</span></label><label><input type="radio" name="vida1" value="b"><span>En Stuttgart, en 1770</span></label><label><input type="radio" name="vida1" value="c"><span>En Jena, en 1801</span></label>
-            <p class="answer-feedback" hidden>La respuesta correcta es Stuttgart, en 1770. Su formación temprana incluyó lecturas y estudios antes de que tomara forma su sistema filosófico. (Pinkard, 2002, pp. 21, 29–50; Hoffmann, 2014, p. 49).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>La respuesta correcta es Stuttgart, en 1770. Su formación temprana incluyó lecturas y estudios antes de que tomara forma su sistema filosófico. (Pinkard, 2002, pp. 21, 29–50; Hoffmann, 2014, p. 49).</p>
           </fieldset>
           <fieldset class="question" data-answer="a"><legend>2. ¿Con quiénes compartió estudios en Tubinga?</legend>
             <label><input type="radio" name="vida2" value="a"><span>Con Friedrich Hölderlin y Friedrich Schelling</span></label><label><input type="radio" name="vida2" value="b"><span>Con Immanuel Kant y Johann Gottlieb Fichte</span></label><label><input type="radio" name="vida2" value="c"><span>Con Arthur Schopenhauer y Friedrich Schlegel</span></label>
-            <p class="answer-feedback" hidden>En el seminario de Tubinga Hegel compartió formación y conversaciones con Hölderlin y Schelling; allí también terminó sus estudios teológicos. (Pinkard, 2002, pp. 54–75; Hoffmann, 2014, pp. 49–61; Rühle, 2010, pp. 7–9).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>En el seminario de Tubinga Hegel compartió formación y conversaciones con Hölderlin y Schelling; allí también terminó sus estudios teológicos. (Pinkard, 2002, pp. 54–75; Hoffmann, 2014, pp. 49–61; Rühle, 2010, pp. 7–9).</p>
           </fieldset>
           <fieldset class="question" data-answer="c"><legend>3. ¿Qué preocupación se vuelve importante en el paso de Berna a Fráncfort?</legend>
             <label><input type="radio" name="vida3" value="a"><span>La idea de que la libertad consiste en aislarse de toda relación</span></label><label><input type="radio" name="vida3" value="b"><span>La defensa de la obediencia exterior como fin de la religión</span></label><label><input type="radio" name="vida3" value="c"><span>La libertad requiere vínculos, reconocimiento y vida común</span></label>
-            <p class="answer-feedback" hidden>La historieta destaca el desplazamiento desde el individuo aislado hacia una libertad que necesita relaciones y comunidad. La experiencia de Hegel como preceptor y sus diálogos intelectuales alimentan ese problema. (Pinkard, 2002, pp. 82–129; Hoffmann, 2014, pp. 87–97; Henrich, 1990, pp. 11–18).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>La historieta destaca el desplazamiento desde el individuo aislado hacia una libertad que necesita relaciones y comunidad. La experiencia de Hegel como preceptor y sus diálogos intelectuales alimentan ese problema. (Pinkard, 2002, pp. 82–129; Hoffmann, 2014, pp. 87–97; Henrich, 1990, pp. 11–18).</p>
           </fieldset>
           <fieldset class="question" data-answer="b"><legend>4. ¿Qué propone Hegel en su escrito de 1801 sobre Fichte y Schelling?</legend>
             <label><input type="radio" name="vida4" value="a"><span>Elegir uno de los dos sistemas y descartar al otro</span></label><label><input type="radio" name="vida4" value="b"><span>Pensar una unidad capaz de explicar diferencias concretas</span></label><label><input type="radio" name="vida4" value="c"><span>Abandonar la filosofía sistemática por completo</span></label>
-            <p class="answer-feedback" hidden>En Jena, Hegel publicó una comparación crítica de ambos sistemas. La apuesta descrita es pensar una unidad que no reduzca las diferencias a piezas inconexas. (Hegel, 1801/2010a, pp. 99–177; Pinkard, 2002, pp. 129–168; Hoffmann, 2014, pp. 105–116).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>En Jena, Hegel publicó una comparación crítica de ambos sistemas. La apuesta descrita es pensar una unidad que no reduzca las diferencias a piezas inconexas. (Hegel, 1801/2010a, pp. 99–177; Pinkard, 2002, pp. 129–168; Hoffmann, 2014, pp. 105–116).</p>
           </fieldset>
           <fieldset class="question" data-answer="a"><legend>5. ¿Qué movimiento presenta la <em>Fenomenología del espíritu</em> de 1807?</legend>
             <label><input type="radio" name="vida5" value="a"><span>La conciencia prueba sus formas de saber y cambia al descubrir sus límites</span></label><label><input type="radio" name="vida5" value="b"><span>Una lista de reglas formales para evitar errores de razonamiento</span></label><label><input type="radio" name="vida5" value="c"><span>Una biografía de los filósofos de la Antigüedad</span></label>
-            <p class="answer-feedback" hidden>La obra sigue figuras de conciencia y autoconciencia, razón y espíritu; cada forma de saber es puesta a prueba y la experiencia transforma lo que la conciencia entiende por objeto. (Hegel, 1807/2010b, pp. 178–559; Hoffmann, 2014, pp. 236–339; Pinkard, 2002, pp. 255–293).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>La obra sigue figuras de conciencia y autoconciencia, razón y espíritu; cada forma de saber es puesta a prueba y la experiencia transforma lo que la conciencia entiende por objeto. (Hegel, 1807/2010b, pp. 178–559; Hoffmann, 2014, pp. 236–339; Pinkard, 2002, pp. 255–293).</p>
           </fieldset>
           <fieldset class="question" data-answer="c"><legend>6. ¿Cuál es el orden de publicación de las partes de la <em>Ciencia de la lógica</em>?</legend>
             <label><input type="radio" name="vida6" value="a"><span>Concepto (1812), Ser (1813), Esencia (1816)</span></label><label><input type="radio" name="vida6" value="b"><span>Esencia (1812), Concepto (1813), Ser (1816)</span></label><label><input type="radio" name="vida6" value="c"><span>Ser (1812), Esencia (1813), Concepto (1816)</span></label>
-            <p class="answer-feedback" hidden>La edición presenta el libro del Ser (1812), el de la Esencia (1813) y, después, la lógica subjetiva o doctrina del Concepto (1816). (Hegel, 1812–1813/2011; Hegel, 1816/2015; Pinkard, 2002, pp. 347–450).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>La edición presenta el libro del Ser (1812), el de la Esencia (1813) y, después, la lógica subjetiva o doctrina del Concepto (1816). (Hegel, 1812–1813/2011; Hegel, 1816/2015; Pinkard, 2002, pp. 347–450).</p>
           </fieldset>
           <fieldset class="question" data-answer="b"><legend>7. ¿Qué esquema general expone Hegel en la <em>Enciclopedia</em>?</legend>
             <label><input type="radio" name="vida7" value="a"><span>Ética, política y estética</span></label><label><input type="radio" name="vida7" value="b"><span>Lógica, filosofía de la naturaleza y filosofía del espíritu</span></label><label><input type="radio" name="vida7" value="c"><span>Física, matemática y teología</span></label>
-            <p class="answer-feedback" hidden>La <em>Enciclopedia</em> organiza el sistema en ciencia de la lógica, filosofía de la naturaleza y filosofía del espíritu. Hegel publicó su primera versión en 1817, durante su etapa en Heidelberg. (Hegel, 1830/2005; Pinkard, 2002, pp. 530–626; Hoffmann, 2014, pp. 157–167).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>La <em>Enciclopedia</em> organiza el sistema en ciencia de la lógica, filosofía de la naturaleza y filosofía del espíritu. Hegel publicó su primera versión en 1817, durante su etapa en Heidelberg. (Hegel, 1830/2005; Pinkard, 2002, pp. 530–626; Hoffmann, 2014, pp. 157–167).</p>
           </fieldset>
           <fieldset class="question" data-answer="a"><legend>8. ¿Qué publicó Hegel en Berlín en 1821?</legend>
             <label><input type="radio" name="vida8" value="a"><span>Las <em>Líneas fundamentales de la filosofía del derecho</em></span></label><label><input type="radio" name="vida8" value="b"><span>La primera edición de la <em>Fenomenología del espíritu</em></span></label><label><input type="radio" name="vida8" value="c"><span>El primer volumen de la <em>Ciencia de la lógica</em></span></label>
-            <p class="answer-feedback" hidden>En Berlín Hegel publicó su obra de filosofía del derecho y examinó cómo la libertad se realiza en instituciones y prácticas compartidas. (Pinkard, 2002, pp. 592–625; Hoffmann, 2014, pp. 349–368).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>En Berlín Hegel publicó su obra de filosofía del derecho y examinó cómo la libertad se realiza en instituciones y prácticas compartidas. (Pinkard, 2002, pp. 592–625; Hoffmann, 2014, pp. 349–368).</p>
           </fieldset>
           <fieldset class="question" data-answer="c"><legend>9. ¿Qué significa la eticidad en la explicación de la filosofía del derecho?</legend>
             <label><input type="radio" name="vida9" value="a"><span>La obediencia privada a una regla sin vida social</span></label><label><input type="radio" name="vida9" value="b"><span>Un sentimiento personal sin instituciones</span></label><label><input type="radio" name="vida9" value="c"><span>Normas e instituciones compartidas donde la libertad se vuelve práctica</span></label>
-            <p class="answer-feedback" hidden>La eticidad comprende ámbitos relacionados como familia, sociedad civil y Estado; en ellos la libertad deja de ser solo abstracta y adquiere forma social. (Hoffmann, 2014, pp. 349–368; Pinkard, 2002, pp. 478–505).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>La eticidad comprende ámbitos relacionados como familia, sociedad civil y Estado; en ellos la libertad deja de ser solo abstracta y adquiere forma social. (Hoffmann, 2014, pp. 349–368; Pinkard, 2002, pp. 478–505).</p>
           </fieldset>
           <fieldset class="question" data-answer="b"><legend>10. ¿Dónde y en qué año murió Hegel?</legend>
             <label><input type="radio" name="vida10" value="a"><span>En Heidelberg, en 1817</span></label><label><input type="radio" name="vida10" value="b"><span>En Berlín, en 1831</span></label><label><input type="radio" name="vida10" value="c"><span>En Stuttgart, en 1807</span></label>
-            <p class="answer-feedback" hidden>Hegel murió en Berlín en 1831, a los 61 años. Tras su muerte, estudiantes y editores difundieron materiales de sus cursos. (Pinkard, 2002, pp. 626–825; Hoffmann, 2014, p. 167; Rühle, 2010, pp. 19–28).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>Hegel murió en Berlín en 1831, a los 61 años. Tras su muerte, estudiantes y editores difundieron materiales de sus cursos. (Pinkard, 2002, pp. 626–825; Hoffmann, 2014, p. 167; Rühle, 2010, pp. 19–28).</p>
           </fieldset>
           <div class="quiz-tools"><span class="quiz-count">Puedes repetirlo para mejorar tu puntaje.</span><div class="quiz-actions"><button class="action grade" type="button">Revisar respuestas</button><button class="action reset" type="button">Reiniciar</button></div></div>
         </div>
@@ -1396,43 +1407,43 @@ body.high-contrast{background:#000!important;color:#fff}
           <div class="quiz-result" role="status" aria-live="polite">Selecciona una opción en cada pregunta y luego revisa.</div>
           <fieldset class="question" data-answer="b"><legend>1. ¿Cómo avanza la experiencia de la conciencia?</legend>
             <label><input type="radio" name="fen1" value="a"><span>Un maestro le entrega desde fuera el criterio definitivo</span></label><label><input type="radio" name="fen1" value="b"><span>La conciencia examina su saber y encuentra una discrepancia que transforma su posición</span></label><label><input type="radio" name="fen1" value="c"><span>La conciencia conserva intacta la primera certeza durante toda la obra</span></label>
-            <p class="answer-feedback" hidden>La experiencia confronta lo que la conciencia toma por verdadero con lo que su propio saber muestra; la discrepancia impulsa una nueva figura. (Hegel, 1807/2017, pp. 45–53; Pardo, 2008, pp. 49–55).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>La experiencia confronta lo que la conciencia toma por verdadero con lo que su propio saber muestra; la discrepancia impulsa una nueva figura. (Hegel, 1807/2017, pp. 45–53; Pardo, 2008, pp. 49–55).</p>
           </fieldset>
           <fieldset class="question" data-answer="c"><legend>2. ¿Qué descubre la certeza sensible al intentar decir «esto, aquí, ahora»?</legend>
             <label><input type="radio" name="fen2" value="a"><span>Que el lenguaje puede nombrar solo objetos únicos e irrepetibles</span></label><label><input type="radio" name="fen2" value="b"><span>Que el objeto inmediato no tiene ninguna relación con el saber</span></label><label><input type="radio" name="fen2" value="c"><span>Que esas expresiones valen para muchos casos y lo singular se vuelve universal</span></label>
-            <p class="answer-feedback" hidden>Al decir «ahora» o «aquí», la conciencia usa palabras aplicables a distintos momentos y lugares; su supuesto saber puramente singular ya contiene universalidad. (Hegel, 1807/2017, pp. 54–60; Cubo Ugarte, 2010, pp. 63–70; Fink, 2011, pp. 87–100).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>Al decir «ahora» o «aquí», la conciencia usa palabras aplicables a distintos momentos y lugares; su supuesto saber puramente singular ya contiene universalidad. (Hegel, 1807/2017, pp. 54–60; Cubo Ugarte, 2010, pp. 63–70; Fink, 2011, pp. 87–100).</p>
           </fieldset>
           <fieldset class="question" data-answer="a"><legend>3. ¿Qué problema aparece en la percepción?</legend>
             <label><input type="radio" name="fen3" value="a"><span>Cómo una cosa una reúne propiedades múltiples</span></label><label><input type="radio" name="fen3" value="b"><span>Cómo una ley matemática produce por sí sola la autoconciencia</span></label><label><input type="radio" name="fen3" value="c"><span>Cómo el deseo elimina toda relación con otros sujetos</span></label>
-            <p class="answer-feedback" hidden>La cosa se presenta como una, mientras sus propiedades son múltiples y diferentes; la conciencia debe explicar esa relación entre unidad y diversidad. (Hegel, 1807/2017, pp. 61–70; Cubo Ugarte, 2010, pp. 70–75; Hoffmann, 2014, pp. 171–211).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>La cosa se presenta como una, mientras sus propiedades son múltiples y diferentes; la conciencia debe explicar esa relación entre unidad y diversidad. (Hegel, 1807/2017, pp. 61–70; Cubo Ugarte, 2010, pp. 70–75; Hoffmann, 2014, pp. 171–211).</p>
           </fieldset>
           <fieldset class="question" data-answer="b"><legend>4. ¿Por qué el entendimiento no queda satisfecho con un «más allá» separado del fenómeno?</legend>
             <label><input type="radio" name="fen4" value="a"><span>Porque las leyes no pueden relacionarse con lo que aparece</span></label><label><input type="radio" name="fen4" value="b"><span>Porque un más allá sin relación con la experiencia resulta vacío</span></label><label><input type="radio" name="fen4" value="c"><span>Porque la percepción ya conoce todas las causas</span></label>
-            <p class="answer-feedback" hidden>La búsqueda de fuerzas y leyes intenta explicar la aparición; un mundo suprasensible completamente separado no ofrece contenido explicativo conectado con la experiencia. (Hegel, 1807/2017, pp. 71–89; Cubo Ugarte, 2010, pp. 76–84; Hoffmann, 2014, pp. 171–211).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>La búsqueda de fuerzas y leyes intenta explicar la aparición; un mundo suprasensible completamente separado no ofrece contenido explicativo conectado con la experiencia. (Hegel, 1807/2017, pp. 71–89; Cubo Ugarte, 2010, pp. 76–84; Hoffmann, 2014, pp. 171–211).</p>
           </fieldset>
           <fieldset class="question" data-answer="c"><legend>5. ¿Qué necesita la autoconciencia para obtener un reconocimiento estable?</legend>
             <label><input type="radio" name="fen5" value="a"><span>Consumir indefinidamente objetos externos</span></label><label><input type="radio" name="fen5" value="b"><span>Aislarse de todas las demás conciencias</span></label><label><input type="radio" name="fen5" value="c"><span>La respuesta de otra autoconciencia que también actúe por sí misma</span></label>
-            <p class="answer-feedback" hidden>La satisfacción del deseo sobre objetos es pasajera. Para reconocerse necesita otra conciencia que pueda responder como sujeto. (Hegel, 1807/2017, pp. 90–100; Cubo Ugarte, 2010, pp. 85–96; Hoffmann, 2014, pp. 171–235).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>La satisfacción del deseo sobre objetos es pasajera. Para reconocerse necesita otra conciencia que pueda responder como sujeto. (Hegel, 1807/2017, pp. 90–100; Cubo Ugarte, 2010, pp. 85–96; Hoffmann, 2014, pp. 171–235).</p>
           </fieldset>
           <fieldset class="question" data-answer="a"><legend>6. ¿Por qué el reconocimiento del señor queda incompleto?</legend>
             <label><input type="radio" name="fen6" value="a"><span>Depende de alguien a quien no reconoce como igual e independiente</span></label><label><input type="radio" name="fen6" value="b"><span>Porque el señor rechaza cualquier forma de reconocimiento</span></label><label><input type="radio" name="fen6" value="c"><span>Porque no hay relación entre señor y siervo</span></label>
-            <p class="answer-feedback" hidden>La relación desigual debilita el reconocimiento: el señor depende de la respuesta de alguien a quien no trata como autónomo. Por eso su aparente victoria no resuelve la búsqueda de reconocimiento recíproco. (Hegel, 1807/2017, pp. 90–115; Cubo Ugarte, 2010, pp. 90–102; Hoffmann, 2014, pp. 171–235).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>La relación desigual debilita el reconocimiento: el señor depende de la respuesta de alguien a quien no trata como autónomo. Por eso su aparente victoria no resuelve la búsqueda de reconocimiento recíproco. (Hegel, 1807/2017, pp. 90–115; Cubo Ugarte, 2010, pp. 90–102; Hoffmann, 2014, pp. 171–235).</p>
           </fieldset>
           <fieldset class="question" data-answer="b"><legend>7. ¿Qué distingue al estoicismo, el escepticismo y la conciencia desdichada?</legend>
             <label><input type="radio" name="fen7" value="a"><span>Tres etapas históricas sin relación conceptual</span></label><label><input type="radio" name="fen7" value="b"><span>Respuestas parciales a la libertad y a la división entre el yo y su verdad</span></label><label><input type="radio" name="fen7" value="c"><span>Tres pruebas de que la conciencia puede ignorar el mundo</span></label>
-            <p class="answer-feedback" hidden>El estoicismo busca libertad en el pensamiento, el escepticismo pone en duda sus certezas pero conserva prácticas y juicios, y la conciencia desdichada vive una escisión que no logra superar. (Hegel, 1807/2017, pp. 100–115; Cubo Ugarte, 2010, pp. 96–102; Hoffmann, 2014, pp. 171–235).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>El estoicismo busca libertad en el pensamiento, el escepticismo pone en duda sus certezas pero conserva prácticas y juicios, y la conciencia desdichada vive una escisión que no logra superar. (Hegel, 1807/2017, pp. 100–115; Cubo Ugarte, 2010, pp. 96–102; Hoffmann, 2014, pp. 171–235).</p>
           </fieldset>
           <fieldset class="question" data-answer="c"><legend>8. ¿Qué límite encuentra la razón cuando intenta conocer al ser humano solo como objeto natural?</legend>
             <label><input type="radio" name="fen8" value="a"><span>Que la naturaleza no puede observarse</span></label><label><input type="radio" name="fen8" value="b"><span>Que toda observación es ya religión</span></label><label><input type="radio" name="fen8" value="c"><span>Que una señal física no agota la actividad, la historia y el espíritu</span></label>
-            <p class="answer-feedback" hidden>La razón empieza observando y buscando leyes, pero pierde de vista la actividad histórica y espiritual cuando reduce al ser humano a una marca física. (Hegel, 1807/2017, pp. 116–209; Cubo Ugarte, 2010, pp. 103–118; Hoffmann, 2014, pp. 171–235).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>La razón empieza observando y buscando leyes, pero pierde de vista la actividad histórica y espiritual cuando reduce al ser humano a una marca física. (Hegel, 1807/2017, pp. 116–209; Cubo Ugarte, 2010, pp. 103–118; Hoffmann, 2014, pp. 171–235).</p>
           </fieldset>
           <fieldset class="question" data-answer="a"><legend>9. ¿Qué caracteriza al espíritu en la obra?</legend>
             <label><input type="radio" name="fen9" value="a"><span>Un mundo compartido de costumbres, leyes, instituciones y relaciones</span></label><label><input type="radio" name="fen9" value="b"><span>Un pensamiento privado que no depende de la historia</span></label><label><input type="radio" name="fen9" value="c"><span>Una capacidad individual para observar sin actuar</span></label>
-            <p class="answer-feedback" hidden>El espíritu aparece como vida común histórica. Sus figuras muestran tensiones entre normas e instituciones; más tarde, la crítica ilustrada puede convertir la libertad en algo abstracto cuando rechaza toda diferencia e institución. (Hegel, 1807/2017, pp. 210–286; Cubo Ugarte, 2010, pp. 119–135; Pardo, 2008, pp. 60–70).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>El espíritu aparece como vida común histórica. Sus figuras muestran tensiones entre normas e instituciones; más tarde, la crítica ilustrada puede convertir la libertad en algo abstracto cuando rechaza toda diferencia e institución. (Hegel, 1807/2017, pp. 210–286; Cubo Ugarte, 2010, pp. 119–135; Pardo, 2008, pp. 60–70).</p>
           </fieldset>
           <fieldset class="question" data-answer="b"><legend>10. ¿Qué quiere decir aquí «saber absoluto»?</legend>
             <label><input type="radio" name="fen10" value="a"><span>Poseer todos los datos posibles sobre el universo</span></label><label><input type="radio" name="fen10" value="b"><span>Comprender retrospectivamente cómo se formaron y transformaron las figuras del saber y sus objetos</span></label><label><input type="radio" name="fen10" value="c"><span>Dejar atrás toda experiencia para repetir una doctrina</span></label>
-            <p class="answer-feedback" hidden>El saber absoluto no es omnisciencia enciclopédica: es una perspectiva desde la que se comprende el camino y la transformación conjunta del saber y su objeto. (Hegel, 1807/2017, pp. 372–382; Díaz, 2009, pp. 10–34; Cubo Ugarte, 2010, pp. 165–178).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>El saber absoluto no es omnisciencia enciclopédica: es una perspectiva desde la que se comprende el camino y la transformación conjunta del saber y su objeto. (Hegel, 1807/2017, pp. 372–382; Díaz, 2009, pp. 10–34; Cubo Ugarte, 2010, pp. 165–178).</p>
           </fieldset>
           <div class="quiz-tools"><span class="quiz-count">Puedes repetirlo para mejorar tu puntaje.</span><div class="quiz-actions"><button class="action grade" type="button">Revisar respuestas</button><button class="action reset" type="button">Reiniciar</button></div></div>
         </div>
@@ -1449,43 +1460,43 @@ body.high-contrast{background:#000!important;color:#fff}
           <div class="quiz-result" role="status" aria-live="polite">Selecciona una opción en cada pregunta y luego revisa.</div>
           <fieldset class="question" data-answer="b"><legend>1. ¿Cuál es el comienzo del recorrido lógico del Ser?</legend>
             <label><input type="radio" name="log1" value="a"><span>Una cosa determinada con propiedades conocidas</span></label><label><input type="radio" name="log1" value="b"><span>El ser puro, sin determinaciones ni contenido</span></label><label><input type="radio" name="log1" value="c"><span>El concepto completo de la Idea absoluta</span></label>
-            <p class="answer-feedback" hidden>Hegel comienza con ser puro e indeterminado. Precisamente porque no contiene ninguna determinación, el análisis muestra su tránsito hacia la nada y el devenir. (Hegel, 1812–1813/2011, pp. 225–240; Hegel, 1830/2005, § 86).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>Hegel comienza con ser puro e indeterminado. Precisamente porque no contiene ninguna determinación, el análisis muestra su tránsito hacia la nada y el devenir. (Hegel, 1812–1813/2011, pp. 225–240; Hegel, 1830/2005, § 86).</p>
           </fieldset>
           <fieldset class="question" data-answer="c"><legend>2. ¿Qué describe mejor el movimiento dialéctico?</legend>
             <label><input type="radio" name="log2" value="a"><span>Aplicar siempre una plantilla fija de tres pasos a cualquier tema</span></label><label><input type="radio" name="log2" value="b"><span>Reemplazar una idea por su opuesta sin conservar nada</span></label><label><input type="radio" name="log2" value="c"><span>Seguir el límite interno de una categoría y comprender el resultado determinado que produce</span></label>
-            <p class="answer-feedback" hidden>La dialéctica no es una receta exterior. La determinación muestra su límite, y su negación produce un resultado que conserva y reorganiza lo anterior. (Hegel, 1830/2005, §§ 79–82; Hegel, 1812–1813/2011, pp. 209–214; Hoffmann, 2014).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>La dialéctica no es una receta exterior. La determinación muestra su límite, y su negación produce un resultado que conserva y reorganiza lo anterior. (Hegel, 1830/2005, §§ 79–82; Hegel, 1812–1813/2011, pp. 209–214; Hoffmann, 2014).</p>
           </fieldset>
           <fieldset class="question" data-answer="a"><legend>3. ¿Por qué la cualidad implica relación con un límite y con lo otro?</legend>
             <label><input type="radio" name="log3" value="a"><span>Porque algo determinado se distingue y se delimita frente a lo que no es</span></label><label><input type="radio" name="log3" value="b"><span>Porque toda cualidad es una medida numérica</span></label><label><input type="radio" name="log3" value="c"><span>Porque lo finito y lo infinito son mundos sin relación</span></label>
-            <p class="answer-feedback" hidden>La determinidad hace que algo sea lo que es y lo diferencia de otro; el límite separa y también relaciona. Por eso la lógica analiza lo finito y lo infinito dentro de un mismo movimiento. (Hegel, 1812–1813/2011, pp. 241–267; Hoffmann, 2014).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>La determinidad hace que algo sea lo que es y lo diferencia de otro; el límite separa y también relaciona. Por eso la lógica analiza lo finito y lo infinito dentro de un mismo movimiento. (Hegel, 1812–1813/2011, pp. 241–267; Hoffmann, 2014).</p>
           </fieldset>
           <fieldset class="question" data-answer="b"><legend>4. ¿Qué expresa la medida?</legend>
             <label><input type="radio" name="log4" value="a"><span>La eliminación de toda diferencia cualitativa</span></label><label><input type="radio" name="log4" value="b"><span>La unidad de cualidad y cantidad, cuando una variación cuantitativa puede afectar el modo de ser</span></label><label><input type="radio" name="log4" value="c"><span>Una cantidad sin límites ni relaciones</span></label>
-            <p class="answer-feedback" hidden>La medida vincula cantidad y cualidad: bajo ciertas relaciones, un cambio cuantitativo corresponde a una transformación cualitativa. (Hegel, 1812–1813/2011, pp. 293–432; Hegel, 1830/2005, §§ 99–107).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>La medida vincula cantidad y cualidad: bajo ciertas relaciones, un cambio cuantitativo corresponde a una transformación cualitativa. (Hegel, 1812–1813/2011, pp. 293–432; Hegel, 1830/2005, §§ 99–107).</p>
           </fieldset>
           <fieldset class="question" data-answer="c"><legend>5. ¿Qué examina la doctrina de la esencia?</legend>
             <label><input type="radio" name="log5" value="a"><span>Solo objetos inmediatos sin mediaciones</span></label><label><input type="radio" name="log5" value="b"><span>El inventario de cosas ocultas detrás de las apariencias</span></label><label><input type="radio" name="log5" value="c"><span>La reflexión y las relaciones como identidad, diferencia, oposición y contradicción</span></label>
-            <p class="answer-feedback" hidden>La esencia se desarrolla como reflexión y mediación; sus determinaciones incluyen identidad, diferencia, oposición y contradicción. No se trata de un catálogo de objetos escondidos. (Hegel, 1812–1813/2011, pp. 441–495; Hegel, 1830/2005, §§ 112–121).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>La esencia se desarrolla como reflexión y mediación; sus determinaciones incluyen identidad, diferencia, oposición y contradicción. No se trata de un catálogo de objetos escondidos. (Hegel, 1812–1813/2011, pp. 441–495; Hegel, 1830/2005, §§ 112–121).</p>
           </fieldset>
           <fieldset class="question" data-answer="a"><legend>6. En esta lógica, ¿la apariencia es simplemente una ilusión que debe descartarse?</legend>
             <label><input type="radio" name="log6" value="a"><span>No: es el modo en que la esencia se manifiesta en relaciones</span></label><label><input type="radio" name="log6" value="b"><span>Sí: la esencia verdadera nunca se manifiesta</span></label><label><input type="radio" name="log6" value="c"><span>Sí: Hegel separa por completo esencia y fenómeno</span></label>
-            <p class="answer-feedback" hidden>La doctrina de la apariencia analiza la manifestación de la esencia y sus relaciones —existencia, cosa y propiedades, fenómeno y fuerza—; no opone sin más una verdad escondida a una superficie falsa. (Hegel, 1812–1813/2011, pp. 496–618; Hoffmann, 2014).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>La doctrina de la apariencia analiza la manifestación de la esencia y sus relaciones —existencia, cosa y propiedades, fenómeno y fuerza—; no opone sin más una verdad escondida a una superficie falsa. (Hegel, 1812–1813/2011, pp. 496–618; Hoffmann, 2014).</p>
           </fieldset>
           <fieldset class="question" data-answer="b"><legend>7. ¿Qué muestra la acción recíproca en el tránsito a la doctrina del concepto?</legend>
             <label><input type="radio" name="log7" value="a"><span>Que causa y efecto nunca se afectan</span></label><label><input type="radio" name="log7" value="b"><span>Que los términos de una relación actúan y son afectados, abriendo el paso al concepto</span></label><label><input type="radio" name="log7" value="c"><span>Que el concepto es una palabra puesta desde fuera sobre las cosas</span></label>
-            <p class="answer-feedback" hidden>La relación de causalidad culmina en interacción: cada lado participa en la relación. Hegel presenta este resultado como tránsito hacia el concepto, una forma más autodeterminada de unidad. (Hegel, 1812–1813/2011, pp. 619–640; Hegel, 1816/2015, pp. 125–148).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>La relación de causalidad culmina en interacción: cada lado participa en la relación. Hegel presenta este resultado como tránsito hacia el concepto, una forma más autodeterminada de unidad. (Hegel, 1812–1813/2011, pp. 619–640; Hegel, 1816/2015, pp. 125–148).</p>
           </fieldset>
           <fieldset class="question" data-answer="c"><legend>8. ¿Qué momentos articula el concepto?</legend>
             <label><input type="radio" name="log8" value="a"><span>Ser, esencia y nada</span></label><label><input type="radio" name="log8" value="b"><span>Mecanismo, quimismo y teleología</span></label><label><input type="radio" name="log8" value="c"><span>Universalidad, particularidad e individualidad</span></label>
-            <p class="answer-feedback" hidden>El concepto se articula como universal, particular e individual. Sus momentos no son piezas aisladas: el universal se determina en lo particular y llega a concreción singular. (Hegel, 1816/2015, pp. 125–173; Hegel, 1830/2005, §§ 160–165).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>El concepto se articula como universal, particular e individual. Sus momentos no son piezas aisladas: el universal se determina en lo particular y llega a concreción singular. (Hegel, 1816/2015, pp. 125–173; Hegel, 1830/2005, §§ 160–165).</p>
           </fieldset>
           <fieldset class="question" data-answer="a"><legend>9. ¿Qué papel cumplen el juicio y el silogismo?</legend>
             <label><input type="radio" name="log9" value="a"><span>Despliegan diferencias y mediaciones que enlazan los momentos del concepto</span></label><label><input type="radio" name="log9" value="b"><span>Son ejemplos de ciencias naturales sin conexión con el concepto</span></label><label><input type="radio" name="log9" value="c"><span>Eliminan la necesidad de toda relación lógica</span></label>
-            <p class="answer-feedback" hidden>El juicio diferencia y relaciona determinaciones; el silogismo hace explícita la mediación que las conecta. Así se desarrolla la subjetividad lógica del concepto. (Hegel, 1816/2015, pp. 149–258; Hegel, 1830/2005, §§ 166–193).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>El juicio diferencia y relaciona determinaciones; el silogismo hace explícita la mediación que las conecta. Así se desarrolla la subjetividad lógica del concepto. (Hegel, 1816/2015, pp. 149–258; Hegel, 1830/2005, §§ 166–193).</p>
           </fieldset>
           <fieldset class="question" data-answer="b"><legend>10. ¿Cuál es el orden general desde la objetividad hacia el cierre de la lógica?</legend>
             <label><input type="radio" name="log10" value="a"><span>Idea absoluta → quimismo → mecanismo → teleología</span></label><label><input type="radio" name="log10" value="b"><span>Mecanismo → quimismo → teleología; luego la Idea recorre vida, conocer e Idea absoluta</span></label><label><input type="radio" name="log10" value="c"><span>Ser → naturaleza → política, como partes internas de la doctrina del concepto</span></label>
-            <p class="answer-feedback" hidden>La objetividad pasa por mecanismo, quimismo y teleología. La Idea comprende concepto y objetividad, y se despliega en vida, conocer e Idea absoluta. (Hegel, 1816/2015, pp. 259–408; Hegel, 1830/2005, §§ 194–244; Hoffmann, 2014).</p>
+            <p class="answer-feedback" role="status" aria-live="polite" hidden>La objetividad pasa por mecanismo, quimismo y teleología. La Idea comprende concepto y objetividad, y se despliega en vida, conocer e Idea absoluta. (Hegel, 1816/2015, pp. 259–408; Hegel, 1830/2005, §§ 194–244; Hoffmann, 2014).</p>
           </fieldset>
           <div class="quiz-tools"><span class="quiz-count">Puedes repetirlo para mejorar tu puntaje.</span><div class="quiz-actions"><button class="action grade" type="button">Revisar respuestas</button><button class="action reset" type="button">Reiniciar</button></div></div>
         </div>
@@ -1530,6 +1541,48 @@ function activateView(key,addHistory,moveFocus){if(!viewParts[key])return;Object
 function restoreView(){const hash=decodeURIComponent(location.hash.slice(1));const key=routeFor(hash)||'inicio';activateView(key,false,false);if(hash&&hash!==key){const target=document.getElementById(hash);if(target)setTimeout(function(){target.scrollIntoView({behavior:'auto',block:'start'});},60);}}
 document.addEventListener('click',function(event){const link=event.target.closest('a[href^="#"]');if(!link)return;const id=decodeURIComponent(link.hash.slice(1));const key=routeFor(id);if(!key)return;if(id===key){event.preventDefault();activateView(key,true,true);}else if(key!==activeView){event.preventDefault();activateView(key,true,true);const target=document.getElementById(id);if(target)setTimeout(function(){target.scrollIntoView({behavior:'smooth',block:'start'});},80);}});
 window.addEventListener('popstate',restoreView);window.addEventListener('hashchange',restoreView);restoreView();}());
+</script><nav id="story-dock" class="story-dock" aria-label="Controles para deslizar por la historieta" hidden>
+  <button id="story-prev" class="dock-button" type="button" aria-label="Escena anterior" disabled>↑</button>
+  <div class="dock-center"><span id="story-status" class="dock-status" aria-live="polite">Escena 1</span><input id="story-range" class="dock-range" type="range" min="0" max="0" value="0" aria-label="Elegir escena de la historieta"></div>
+  <button id="story-next" class="dock-button" type="button" aria-label="Escena siguiente">↓</button>
+</nav>
+<script>
+(function(){
+  const storyViews=['vida','fenomenologia','logica'];
+  const dock=document.getElementById('story-dock');
+  const previous=document.getElementById('story-prev');
+  const next=document.getElementById('story-next');
+  const range=document.getElementById('story-range');
+  const status=document.getElementById('story-status');
+  let scenes=[];let current=0;let scheduled=false;
+  function reduceMotion(){return window.matchMedia('(prefers-reduced-motion: reduce)').matches;}
+  function go(index){if(!scenes.length)return;current=Math.max(0,Math.min(scenes.length-1,Number(index)));scenes[current].scrollIntoView({behavior:reduceMotion()?'auto':'smooth',block:'start'});update();}
+  function update(){if(!scenes.length)return;const center=window.innerHeight/2;let best=0;let distance=Infinity;scenes.forEach(function(scene,index){const rect=scene.getBoundingClientRect();const d=Math.abs((rect.top+rect.bottom)/2-center);if(d<distance){distance=d;best=index;}});current=best;range.value=String(current);range.max=String(scenes.length-1);range.setAttribute('aria-valuetext','Escena '+(current+1)+' de '+scenes.length);status.textContent='Escena '+(current+1)+' de '+scenes.length+' · '+(scenes[current].dataset.title||'Historieta');previous.disabled=current===0;next.disabled=current===scenes.length-1;}
+  function sync(){const view=document.body.dataset.view||'inicio';const active=storyViews.includes(view);dock.hidden=!active;document.documentElement.classList.toggle('story-snap',active);scenes=active?Array.from(document.querySelectorAll('#'+view+' .scene')):[];current=0;if(active){range.value='0';range.max=String(Math.max(0,scenes.length-1));requestAnimationFrame(update);}}
+  previous.addEventListener('click',function(){go(current-1);});next.addEventListener('click',function(){go(current+1);});range.addEventListener('input',function(){go(range.value);});
+  window.addEventListener('scroll',function(){if(scenes.length&&!scheduled){scheduled=true;requestAnimationFrame(function(){update();scheduled=false;});}},{passive:true});
+  new MutationObserver(sync).observe(document.body,{attributes:true,attributeFilter:['data-view']});sync();
+})();
+</script><script>
+/* Retroalimentación inmediata de respuestas */
+(function(){
+  document.querySelectorAll('[data-quiz] .question').forEach(function(question){
+    const feedback=question.querySelector('.answer-feedback');
+    if(!feedback)return;
+    if(!feedback.dataset.rationale)feedback.dataset.rationale=feedback.textContent.trim();
+    question.querySelectorAll('input[type="radio"]').forEach(function(input){
+      input.addEventListener('change',function(){
+        const correct=input.value===question.dataset.answer;
+        question.classList.remove('is-correct','is-wrong','is-missing');
+        question.classList.add(correct?'is-correct':'is-wrong');
+        const correctInput=question.querySelector('input[value="'+question.dataset.answer+'"]');
+        const correctLabel=correctInput?correctInput.closest('label').textContent.trim():'la opción indicada';
+        feedback.textContent=(correct?'Correcto. ':'Incorrecto. La respuesta correcta es «'+correctLabel+'». ')+feedback.dataset.rationale;
+        feedback.hidden=false;
+      });
+    });
+  });
+})();
 </script></body></html>
 
 
